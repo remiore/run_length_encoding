@@ -1,0 +1,17 @@
+def rle_decompress(small_list):
+    decompressed_list = []
+    for i in range(len(small_list)):
+    
+        decompressed_value = 0
+        # index = small_list[i]
+        if i % 2 == 1:
+            decompressed_value = small_list[i-1] * small_list[i]
+            decompressed_list.append(decompressed_value)
+    # return decompressed_list
+    # stuff_list = [decompressed_list]
+    single_digit = []
+    for i in range(len(decompressed_list)):
+        single_stuff = decompressed_list[i]
+        for i in range(len(single_stuff)):
+            single_digit.append(single_stuff[i])
+    return single_digit
