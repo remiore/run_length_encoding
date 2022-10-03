@@ -1,0 +1,18 @@
+def rle_compress(large_list):
+  count = 0
+  comp_list = []
+  # comp_value = large_list[0]
+  for i in large_list:
+    if not i in comp_list:
+      count = 0
+      for j in large_list:
+        if i == j:
+          count = count + 1
+      # comp_value = i
+      comp_list.append(i)
+      # if i == comp_value:
+      #   count = count + 1
+      comp_list.append(count)
+  return comp_list
+# print(rle_compress(['a','a','b','b', 'b']))
+            
