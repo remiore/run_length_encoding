@@ -14,5 +14,5 @@ def rle_compress(large_list):
       #   count = count + 1
       comp_list.append(count)
   return comp_list
-# print(rle_compress(['a','a','b','b', 'b']))
+
             
